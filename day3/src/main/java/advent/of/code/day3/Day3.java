@@ -62,9 +62,9 @@ public class Day3 {
     private int getPriority(char overlap) {
 
         if (Character.isUpperCase(overlap)) {
-            return (int) overlap - "A".toCharArray()[0] + 1 + 26;
+            return (int) overlap - 'A' + 1 + 26;
         } else {
-            return  (int) overlap - "a".toCharArray()[0] + 1;
+            return  (int) overlap - 'a' + 1;
         }
     }
 
